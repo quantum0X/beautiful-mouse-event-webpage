@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------        for msg        --------
+@media only screen and (max-width: 1370px) {
+  .device-msg-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+  }
+} */
+
+/* --------        main code        -------- */
+@media only screen and (min-width: 1370px) {
+  .parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+  }
+
+  .container {
+    visibility: visible;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .bg-img {
+    position: absolute;
+    width: 2500px;
+    top: calc(50% - 243px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .fog-7 {
+    position: absolute;
+    width: 1900px;
+    top: calc(50% + 300px);
+    left: calc(50% + 300px);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .mountain-10 {
+    position: absolute;
+    width: 892px;
+    top: calc(50% + 57px);
+    left: calc(50% + 100px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+
+  .fog-6 {
+    position: absolute;
+    width: 1610px;
+    top: calc(50% + 200px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+
+  .mountain-9 {
+    position: absolute;
+    width: 570px;
+    top: calc(50% - 200px);
+    left: calc(5%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+
+  .mountain-8 {
+    position: absolute;
+    width: 810px;
+    top: calc(50% + 140px);
+    left: calc(50% - 188px);
+    transform: translate(-50%, -50%);
+    z-index: 6;
+  }
+
+  .fog-5 {
+    position: absolute;
+    width: 450px;
+    top: calc(50% + 222px);
+    left: calc(55% - 22px);
+    transform: translate(-50%, -50%);
+    z-index: 7;
+  }
+
+  .mountain-7 {
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 525px);
+    left: calc(50% - 305px);
+    transform: translate(-50%, -50%);
+    z-index: 8;
+  }
+
+  .text {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    pointer-events: auto;
+  }
+
+  .text h2 {
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 0.88;
+  }
+
+  .text h1 {
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 0.88;
+  }
+
+  .mountain-6 {
+    position: absolute;
+    width: 408px;
+    top: calc(70%);
+    left: calc(50% + 590px);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .fog-4 {
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 223px);
+    left: calc(50% + 60px);
+    transform: translate(-50%, -50%);
+    z-index: 11;
+  }
+
+  .mountain-5 {
+    position: absolute;
+    width: 538px;
+    top: calc(80%);
+    left: calc(50% + 130px);
+    transform: translate(-50%, -50%);
+    z-index: 12;
+  }
+
+  .fog-3 {
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 224px);
+    left: calc(50% + 15px);
+    transform: translate(-50%, -50%);
+    z-index: 13;
+  }
+
+  .mountain-2 {
+    position: absolute;
+    width: 892px;
+    top: calc(85%);
+    left: calc(75%);
+    transform: translate(-50%, -50%);
+    z-index: 14;
+  }
+
+  .mountain-3 {
+    position: absolute;
+    width: 892px;
+    top: calc(50% + 100px);
+    left: calc(100% + 100px);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+  }
+
+  .fog-2 {
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 323px);
+    left: calc(50% + 15px);
+    transform: translate(-50%, -50%);
+    z-index: 16;
+  }
+
+  .mountain-4 {
+    position: absolute;
+    width: 892px;
+    top: calc(80%);
+    left: calc(25%);
+    transform: translate(-50%, -50%);
+    z-index: 17;
+  }
+
+  .mountain-1 {
+    position: absolute;
+    width: 892px;
+    top: calc(50%);
+    /* left: calc(50% - 633px); */
+    transform: translate(-50%, -50%);
+    z-index: 18;
+  }
+
+  .sun-rays {
+    position: absolute;
+    width: 600px;
+    top: 0;
+    right: 0;
+    z-index: 19;
+  }
+
+  .black-rays {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+  }
+
+  .fog-1 {
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 223px);
+    left: calc(50% + 215px);
+    transform: translate(-50%, -50%);
+    z-index: 21;
+  }
+
+  .vintage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(0, 0, 0, 0.4)
+    );
+    z-index: 22;
+  }
+}
